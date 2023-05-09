@@ -1,0 +1,29 @@
+
+main{
+    position: absolute;
+    width: 100%;
+    top: 3rem;
+    z-index: 90;
+}
+app-sidebar{
+    left: 0rem;
+    position: fixed;
+    width: 60px;
+    height:100vh;
+ /* box-shadow: 0px 0px 10px black; */
+    background-color: white;
+    overflow-x: hidden;
+    white-space: nowrap;
+    transition: width 250ms ease-in ;
+}
+
+.app-side-nav-open{
+    width: 250px;
+}
+
+
+
+
+
+
+

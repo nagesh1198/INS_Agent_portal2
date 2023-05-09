@@ -1,0 +1,47 @@
+<div style="margin-left:100px ; margin-top:80px; cursor: pointer;" >
+  <i class="fa-solid fa-chevron-left" routerLink="/dashboard"> </i>
+  Total Application
+</div>
+<div>
+  <div class="dropdown" style="margin-left:150px ; margin-top: 40px; ">
+    <button class="btn dropdown-toggle" type="button" style="background-color: azure;" data-bs-toggle="dropdown" aria-expanded="false">
+      All policies
+    </button>
+    <ul class="dropdown-menu" style="border-radius: 15px;">
+      <li><a class="dropdown-item" href="#">Health</a></li>
+      <li><a class="dropdown-item" href="#">Documents</a></li>
+      <li><a class="dropdown-item" href="#">Gallery</a></li>
+    </ul>
+  </div>
+</div>
+<div class="card" style="width: 900px; margin-left: 150px; margin-top: 50px;">
+
+    <div class="card-body">
+
+
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Poicy Owner</th> 
+            <th scope="col">Life Insured</th>
+            <th scope="col">Prd type</th>
+            <th scope="col">Application No</th>
+            <th scope="col">Date</th>
+            <th scope="col">SA</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr appClickableTableRow data-href="/applicantdetail" [data]="item" *ngFor="let item of list; let i=index">
+            <td>{{item.policyowner}}</td>
+            <td>{{item.Lifeinsured}}</td>
+            <td>{{item.prdtype}}</td>
+            <td>{{item.Applicationno}}</td>
+            <td> {{item.date}}</td>
+            <td>{{item.SA}}</td>
+            <td class="tf" [ngClass]="{'tf':'true','first-card':i==5}">{{item.status}}</td>
+          </tr>
+        </tbody>
+  </table>
+</div>
+</div>

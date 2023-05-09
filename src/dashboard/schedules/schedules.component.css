@@ -1,0 +1,71 @@
+
+.one {
+
+ margin-bottom: 20px;
+    
+ }
+    
+ /* .row::-webkit-scrollbar{
+    
+ /* width: 0; */
+    
+ /* } */
+    
+ .icon1{
+    
+ background-color: rgb(22, 190, 76);
+    
+ color: aliceblue;
+    
+ font-size: 20px;
+    
+ width: 35px;
+    
+ height: 35px;
+    
+ border-radius: 80%;
+    
+ padding:7px ;
+    
+ /* margin-left: 12px; */
+    
+ /* margin-top: 5px; */
+    
+    }
+    
+    .icon2{
+    
+ background-color: rgb(193, 41, 41);
+    
+ color: aliceblue;
+    
+ font-size: 20px;
+    
+ width: 35px;
+    
+ height: 35px;
+    
+ border-radius: 80%;
+    
+ padding:7px ;
+    
+ margin-left: 5px;
+    
+ margin-top: 10px;
+    
+    }
+
+.first-card{
+    background-color:rgb(24, 146, 234) ;
+    color: white;
+}
+#dategiven{
+    border: none;
+    background-color: rgb(233, 239, 239);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.col{
+    padding:1px;
+}

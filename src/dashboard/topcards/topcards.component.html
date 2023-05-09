@@ -1,0 +1,66 @@
+<h5 style="margin-left: 100px; margin-top: 70px; color: #1d1d70">Dashboard</h5>
+<div class="row">
+  <div class="column">
+    <div class="card" routerLink="/expired">
+      <h3
+        style="
+          font-size: 40px;
+          color: rgba(225, 124, 65, 0.925);
+          font-weight: 900;
+        "
+      >
+        0{{ expirerowvalue
+        }}<span class="material-icons-outlined"> update </span>
+      </h3>
+
+      <p class="size">Expired</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" routerLink="/renewal">
+      <h3 style="font-size: 40px; color: rgb(16, 206, 187); font-weight: bold">
+        0{{ renewalrowvalue
+        }}<span class="material-icons-outlined"> autorenew </span>
+      </h3>
+
+      <p class="size">Renewal</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" routerLink="/claims">
+      <h3 style="font-size: 40px; color: rgb(35, 162, 236); font-weight: bold">
+        06<span class="material-icons-outlined"> task </span>
+      </h3>
+
+      <p class="size">Total Claims</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" routerLink="/newleads">
+      <h3 style="font-size: 40px; color: rgb(0, 152, 158); font-weight: bold">
+        0{{ rowvalue
+        }}<span class="material-icons-outlined"> trending_up </span>
+      </h3>
+      <p class="size">New Leads</p>
+    </div>
+  </div>
+</div>
+
+<div
+ style="
+ margin-left: 650px;
+ margin-top: -75px;
+ height: 30px;
+ width: 30px;
+ padding: 3px;
+ border-radius: 50%;
+ background-color: white;
+ color: rgb(24, 146, 234);
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+ ">
+ <span class="material-icons-outlined"> chevron_right </span>
+
+</div>

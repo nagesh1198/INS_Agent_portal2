@@ -1,0 +1,478 @@
+ <div
+ 
+ class="card"
+ 
+ style="
+ 
+  margin-left: 90px;
+ 
+  z-index: 1;
+ 
+  width: 1200px;
+ 
+  margin-top: -30px;
+ 
+  position: fixed;
+ 
+  display: flex;
+ 
+  height: 140px;
+ 
+  justify-content: flex-end;
+ 
+  border: none;
+ 
+  background-color: rgb(233, 238, 238);
+ 
+ "
+ 
+ >
+ 
+ <div class="container-fluid">
+ 
+  <b>CG Protect Form</b>
+ 
+ </div>
+ 
+ <div class="icon">
+ 
+  <i class="fa fa-share-nodes" style="width: 50px; margin-left: 1000px"></i>
+ 
+  <i
+ 
+  class="fa-brands fa-square-whatsapp"
+ 
+  style="color: rgb(49, 228, 109)"
+ 
+ ></i>
+ 
+ </div>
+ 
+ </div>
+ 
+ 
+ 
+
+
+<mat-stepper [linear]="isLinear" #stepper labelPosition="bottom">
+  <mat-step [stepControl]="firstFormGroup" class="card">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel >Fill out your name</ng-template>
+     
+         <div class="page">
+        <div class="content">
+          <form action="#">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">First Name</span>
+                <input type="text" placeholder="Enter first name" required />
+              </div>
+              <div class="input-box">
+                <span class="details">Last Name</span>
+                <input type="text" placeholder="Enter last name" required />
+              </div>
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="number" placeholder="Enter your number" required />
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" placeholder="Enter your email" required />
+              </div>
+    
+              <div class="input-box">
+                <span class="details">Date Of Birth</span>
+                <input type="date" required />
+              </div>
+              <div class="input-box">
+                <span class="details">Pincode</span>
+                <input type="number" placeholder="Enter pin code" required />
+              </div>
+            </div>
+            <div class="gender-details">
+              <input type="radio" name="gender" id="dot-1" />
+              <input type="radio" name="gender" id="dot-2" />
+              <input type="radio" name="gender" id="dot-3" />
+              <span class="gender-title">Gender</span>
+              <div class="category">
+                <label for="dot-1">
+                  <span class="dot one"></span>
+                  <span class="gender">Male</span>
+                </label>
+                <label for="dot-2">
+                  <span class="dot two"></span>
+                  <span class="gender">Female</span>
+                </label>
+                <label for="dot-3">
+                  <span class="dot three"></span>
+                  <span class="gender">Transgender</span>
+                </label>
+              </div>
+            </div>
+            <br />
+    
+            <div class="user-details">
+              <div class="input-box">
+                <label>Do you smoke?</label>
+                <div
+                  style="
+                    display: flex;
+                    width: 130px;
+                    justify-content: space-between;
+                    padding: 10px;
+                  "
+                >
+                  <button class="btn btn-primary">Yes</button>
+                  <button class="btn btn-outline-secondary">No</button>
+                </div>
+              </div>
+              <div class="input-box">
+                <label>Do you consume alcohol?</label>
+                <div
+                  style="
+                    display: flex;
+                    width: 130px;
+                    justify-content: space-between;
+                    padding: 10px;
+                  "
+                >
+                  <button class="btn btn-primary">Yes</button>
+                  <button class="btn btn-outline-secondary">No</button>
+                </div>
+              </div>
+            </div>
+    
+            <div
+              class="user-details"
+              style="display: flex; justify-content: space-between"
+            >
+              <div class="input-box">
+                <span class="details">Address</span>
+                <textarea
+                  id="address"
+                  style="height: 100px; width: 250px"
+                ></textarea>
+              </div>
+    
+              <div class="input-box">
+                <span class="details">Date Of Birth</span>
+                <input type="date" required />
+              </div>
+            </div>
+    
+            <div>
+              <label>Add Dependants</label>
+              <div style="display: flex; justify-content: space-between">
+                <div class="row1">
+                  <div class="column">
+                    <div class="card card1">
+                      <i class="fa fa-user-group"></i>
+                    </div>
+                    <label class="l1">Spouse</label>
+                  </div>
+    
+                  <div class="column">
+                    <div class="card card1">
+                      <i class="fa fa-female"></i>
+                    </div>
+                    <label class="l1">Mother</label>
+                  </div>
+    
+                  <div class="column">
+                    <div class="card card1">
+                      <i class="fa fa-male"></i>
+                    </div>
+                    <label class="l1"> Father </label>
+                  </div>
+    
+                  <div class="column">
+                    <div class="card card1">
+                      <i class="fa fa-child"></i>
+                    </div>
+                    <label class="l1">Child</label>
+                  </div>
+    
+                  <div class="column">
+                    <div class="card card1">
+                      <i class="fa fa-ellipsis"></i>
+                    </div>
+                    <label class="l1">Other</label>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn btn-outline-secondary">+Add</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div
+  class="card fixed-bottom"
+  style="
+   height: 50px;
+   width: 100%;
+   margin-bottom: 0px;
+   margin-left: 60px;
+   z-index: 1;
+   position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  "
+  >
+  <div>
+  <button mat-button matStepperNext>Next</button>
+  </div>
+  </div>
+    </form>
+  </mat-step>
+  <!-- #docregion label -->
+  <mat-step [stepControl]="secondFormGroup" label="Fill out Details">
+  <!-- #enddocregion label -->
+    <form [formGroup]="secondFormGroup">
+      <div class="page">
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Annual Income</span><br />
+              <input type="date" required />
+            </div>
+  
+            <div class="input-box">
+              <span class="details">Government Rebate</span><br />
+              <input type="text" required />
+            </div>
+  
+            <div class="input-box">
+              <span class="details">Tax Rebate</span><br />
+              <input type="text" required />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div
+    class="card fixed-bottom"
+    style="
+     height: 50px;
+     width: 100%;
+     margin-bottom: 0px;
+     margin-left: 60px;
+     z-index: 1;
+     position: fixed;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    "
+    >
+    <div>
+    <button mat-button matStepperPrevious>Back</button>
+    <button mat-button matStepperNext>Next</button>
+    </div>
+    </div>
+    </form>
+  </mat-step>
+
+
+  <mat-step [stepControl]="secondFormGroup" label="Fill out your Proof">
+  <!-- #enddocregion label -->
+    <form [formGroup]="secondFormGroup">
+    
+      <div class="page">
+      <span>YOUR PROOF</span>
+      <div>
+        <form action="#">
+        <div class="card" style="float: left; padding: 30px; border: none">
+          <span>Upload Identity Proof</span>
+          <div
+            class="card"
+            style="height: 250px; width: 380px; border: dashed 1px #aaa"
+          >
+       <div class="image-upload">
+
+          <label for="file-input" style="size: 30px;">
+            
+           <img src="https://th.bing.com/th/id/OIP.pw9ntbL9__y33kazxA5kTwHaHa?pid=ImgDet&w=191&h=191&c=7&dpr=1.5"/>
+            
+          </label>
+            
+         
+            
+         <input id="file-input" type="file" />
+            
+          </div></div>
+        </div>
+        <div class="card" style="float: right; padding: 30px; border: none">
+          <span>Upload Financial Proof</span>
+          <div
+            class="card"
+            style="height: 250px; width: 380px; border: dashed 1px #aaa"
+          >
+          <div class="image-upload">
+
+        <label for="file-input" style="size: 40px;">
+            
+         <img src="https://th.bing.com/th/id/OIP.pw9ntbL9__y33kazxA5kTwHaHa?pid=ImgDet&w=191&h=191&c=7&dpr=1.5"/>
+            
+        </label>
+            
+       
+            
+       <input id="file-input" type="file" />
+            
+        </div></div>
+        </div>
+      </form>
+      </div>
+    </div>
+    <div
+    class="card fixed-bottom"
+    style="
+     height: 50px;
+     width: 100%;
+     margin-bottom: 0px;
+     margin-left: 60px;
+     z-index: 1;
+     position: fixed;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    "
+    >
+    <div>
+    <button mat-button matStepperPrevious>Back</button>
+    <button mat-button matStepperNext>Next</button>
+    </div>
+    </div>
+    </form>
+  </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel> Quotation</ng-template>
+    <form  [formGroup]="thirdFormGroup" >
+    <div class="page">
+    <div class="card" style="width: 1000px; height: 300px;">
+      <div class="row align-items-start" style="padding-top: 15px;">
+        <div class="col">
+          <p>Quotation Reference</p>
+          <p><strong>GRH/3345</strong></p>
+        </div>
+        <div class="col-3">
+          <p>Premimum</p>
+          <p><strong>$70 per week</strong></p>
+        </div>
+      </div>
+      <hr />
+      <div class="row align-items-start">
+        <div class="col">
+          <p>Product</p>
+          <p><strong>CG Protect</strong></p>
+        </div>
+        <div class="col-3">
+          <p>sum insured upto</p>
+          <p><strong>$200,000</strong></p>
+        </div>
+      </div>
+
+      <div class="row align-items-start" style="padding: 25px;">
+        <div class="col">
+          <button class="btn btn-outline-secondary">View Benefits</button>
+        </div>
+        <div class="col-2" style="font-size: 22px">
+          <i class="fa fa-share-nodes" style="width: 50px"></i>
+          <i
+            class="fa-brands fa-square-whatsapp"
+            style="color: rgb(49, 228, 109)"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="width: 1000px; height: 350px;">
+      <div class="row">
+        <div class="col" style="padding-top: 15px">
+          <h4 style="font-weight: bold">Applicant Details</h4>
+        </div>
+        <div
+          class="col-3"
+          style="display: flex; justify-content: space-between"
+        >
+          <i class="fa fa-pencil icon1"></i>
+
+          <i class="fa fa-phone-volume icon1"></i>
+
+          <i class="fa fa-envelope icon1"></i>
+        </div>
+      </div>
+
+      <div class="row align-items-start" >
+        <div class="col">
+          <p>Applicant's Name</p>
+          <p><strong>John Smith</strong></p>
+        </div>
+        <div class="col">
+          <p>Address</p>
+          <p><strong>1533,Mccandless,Miliptas</strong></p>
+        </div>
+        <div class="col">
+          <p>Email</p>
+          <p><strong>johin.smith@xyz.com</strong></p>
+        </div>
+      </div>
+
+      <div class="row align-items-start">
+        <div class="col">
+          <p>Phone number</p>
+          <p><strong>+91-677754443</strong></p>
+        </div>
+        <div class="col">
+          <p>Gender</p>
+          <p><strong>Male</strong></p>
+        </div>
+        <div class="col">
+          <p>Consume's alcohol</p>
+          <p><strong>Yes</strong></p>
+        </div>
+      </div>
+
+      <div class="row align-items-start">
+        <div class="col">
+          <p>Consumes's tobacco</p>
+          <p><strong>Yes</strong></p>
+        </div>
+        <div class="col">
+          <p>Age</p>
+          <p><strong>34</strong></p>
+        </div>
+        <div class="col">
+          <p>D.O.B</p>
+          <p><strong>04/04/1986</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<div
+class="card fixed-bottom"
+style="
+ height: 50px;
+ width: 100%;
+ margin-bottom: 0px;
+ margin-left: 60px;
+ z-index: 1;
+ position: fixed;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+"
+>
+<div>
+  <button mat-button matStepperPrevious>Back</button>
+      <button mat-button routerLink="/quotation">Send Paymentlink</button>
+</div>
+</div>
+  </mat-step>
+</mat-stepper>
+
+

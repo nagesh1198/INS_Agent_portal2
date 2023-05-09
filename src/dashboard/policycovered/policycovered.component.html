@@ -1,0 +1,239 @@
+<div
+  class="back"
+  style="margin-left: 100px; margin-top: 100px; cursor: pointer"
+>
+  <i
+    class="fa-solid fa-chevron-left"
+    onclick="window.location.href='/renewal';"
+  ></i>
+</div>
+
+<div class="card" style="margin-left: 100px; height: 450px; width: 1100px">
+  <div
+    class="card-header"
+    style="height: 100px; background-color: rgb(73, 73, 121)"
+  >
+    <div class="row justify-content-between">
+      <div class="col-4">
+        <div
+          class="rounded-circle border"
+          style="
+            width: 80px;
+
+            height: 80px;
+
+            background-image: url('../../assets/images.jpg');
+            background-position: center center;
+            background-size: cover;
+          "
+        ></div>
+
+        <div
+          style="
+            float: left;
+
+            margin-top: -70px;
+
+            margin-left: 100px;
+
+            color: #fff;
+          "
+        >
+          <h2>{{ data.policyowner }}</h2>
+
+          <p>91799992926</p>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <span class="material-icons-outlined icon"> edit </span>
+
+        <span class="material-icons-outlined icon"> wifi_calling_3 </span>
+
+        <span class="material-icons-outlined icon"> email </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top: 20px">
+    <div class="row align-items-start">
+      <div class="col">
+        <p class="h5">Policy Number</p>
+
+        <p>
+          <strong>{{ data.policyno }}</strong>
+        </p>
+      </div>
+
+      <div class="col">
+        <p class="h5">Product Name</p>
+
+        <p><strong>Corona kawatch</strong></p>
+      </div>
+
+      <div class="col">
+        <p class="h5">Date of Issue</p>
+
+        <p>
+          <strong>{{ data.date }}</strong>
+        </p>
+      </div>
+
+      <div class="col">
+        <p class="h5">Renewal date</p>
+
+        <p>
+          <strong>{{ data.date }}</strong>
+        </p>
+      </div>
+    </div>
+
+    <div class="row align-items-start">
+      <div class="col">
+        <p class="h5">Policy Holder</p>
+
+        <p>
+          <strong>{{ data.policyowner }}</strong>
+        </p>
+      </div>
+
+      <div class="col">
+        <p class="h5">NICR Number</p>
+
+        <p>
+          <strong>{{ data.policyno }}</strong>
+        </p>
+      </div>
+
+      <div class="col">
+        <p class="h5">Submission date</p>
+
+        <p>
+          <strong>{{ data.date }}</strong>
+        </p>
+      </div>
+
+      <div class="col">
+        <p class="h5">Total Sum Insured</p>
+
+        <p><strong>$200,000</strong></p>
+      </div>
+    </div>
+
+    <div class="row align-items-start">
+      <div class="col">
+        <p class="h5">Address</p>
+
+        <p><strong>33,Mccandless,Milliptas</strong></p>
+      </div>
+
+      <div class="col">
+        <p class="h5">Email</p>
+
+        <p><strong>123@xyz.com</strong></p>
+      </div>
+
+      <div class="col">
+        <p class="h5">Total Premium</p>
+
+        <p><strong>$1027</strong></p>
+      </div>
+
+      <div class="col">
+        <p class="h5">Amount Payable</p>
+
+        <p><strong>$1027</strong></p>
+      </div>
+    </div>
+
+    <div class="row align-items-start">
+      <div class="col">
+        <p class="h5">Period Of Insurance</p>
+        <p><strong>20 years</strong></p>
+      </div>
+
+      <div class="col">
+        <p class="h5">Status</p>
+
+        <p>
+          <strong
+            style="background-color: green; color: white; border-radius: 5px"
+            >IN FORCE</strong
+          >
+        </p>
+      </div>
+
+      <div class="col">
+        <p class="h5">Insured Policy Holder</p>
+        <p>
+          <strong>{{ data.policyowner }}</strong>
+        </p>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div
+    class="row"
+    style="margin-top: 30px; margin-left: 100px; margin-bottom: 30px"
+  >
+    <div class="col" style="font-weight: bold; font-size: 22px">
+      Policy Covered
+    </div>
+
+    <div class="col-3">
+      <button class="btn btn-outline-primary" disabled>Cancel Policy</button>
+    </div>
+  </div>
+</div>
+
+<div
+  class="card"
+  style="
+    margin-left: 90px;
+
+    padding: 25px;
+
+    justify-content: center;
+
+    border: none;
+  "
+>
+  <table class="table" style="box-shadow: 0 0 1px">
+    <tbody>
+      <tr *ngFor="let item of PolicyList">
+        <th>{{ item.one }}</th>
+
+        <td>{{ item.two }}</td>
+
+        <td>{{ item.three }}</td>
+      </tr>
+
+      <tr *ngFor="let item of PolicyList">
+        <th>{{ item.four }}</th>
+
+        <td>{{ item.five }}</td>
+
+        <td>{{ item.six }}</td>
+      </tr>
+
+      <tr *ngFor="let item of PolicyList">
+        <th>{{ item.seven }}</th>
+
+        <td>{{ item.eight }}</td>
+
+        <td>{{ item.nine }}</td>
+      </tr>
+
+      <tr *ngFor="let item of PolicyList">
+        <th>{{ item.ten }}</th>
+
+        <td>{{ item.eleven }}</td>
+
+        <td>{{ item.twelve }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

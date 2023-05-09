@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: right;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {
+  margin: 10px;
+}
+
+.row {
+  content: "";
+  display: table;
+  clear: both;
+  margin-left: 70px;
+  margin-top: -60px;
+}
+.card {
+  padding: 20px;
+  text-align: center;
+  height: 6rem;
+  width: 7rem;
+  margin-top: 70px;
+  margin-left: 20px;
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.size {
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: 900;
+  margin-top: -9px;
+}
+
+.size:hover {
+  background-color: azure;
+  border-radius: 5px;
+}

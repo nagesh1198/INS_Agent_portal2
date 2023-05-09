@@ -1,0 +1,537 @@
+<div style="margin-top: 50px; margin-left: 50px">
+  <div>
+    <img src="/assets/family.jpg" style="height: 250px; width: 100%" alt="im" />
+  </div>
+</div>
+
+<div>
+  <form
+    class="d-flex"
+    role="search"
+    style="margin-top: -200px; width: 400px; margin-left: 70px"
+  >
+    <input
+      class="form-control me-2"
+      type="search"
+      placeholder="Search"
+      style="border-radius: 40px"
+      aria-label="Search"
+    />
+    <button
+      class="btn btn-outline-success"
+      style="border-radius: 30px"
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card card1">
+      <span class="material-icons-outlined icon1"> flight </span>
+      <h3 class="size">Travel Insurance</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card card1 d">
+      <span class="material-icons-outlined icon1"> timeline </span>
+      <h3 class="size" (click)="onClick()">Health Insurance</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card card1">
+      <span class="material-icons-outlined icon1"> favorite_border </span>
+      <h3 class="size">Life Insurance</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card card1">
+      <span class="material-icons-outlined icon1"> home </span>
+      <h3 class="size">Home Insurance</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card card1">
+      <span class="material-icons-outlined icon1"> directions_car </span>
+      <h3 class="size">Car Insurance</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card card1">
+      <span class="material-icons-outlined icon1"> cruelty_free </span>
+      <h3 class="size">Pet Insurance</h3>
+    </div>
+  </div>
+</div>
+<div style="margin-top: -40px; margin-left: 70px; font-size: 13px">
+  <b>Health Insurance Plans</b>
+  <br />
+  Select Health Insurance Plans to compare
+</div>
+<button
+  class="btn btn-outline-secondary"
+  style="margin-left: 1150px; margin-top: -70px;"
+  (click)="show = !show"
+>
+  {{ show ? "cancel" : "compare" }}
+</button>
+
+<div class="row1">
+  <div class="column1">
+    <div class="card card2" [class.clikced-style]="isClicked">
+      <div class="card card3">
+        <input
+          style="margin-right: 200px"
+          type="checkbox"
+          name=""
+          id=""
+          *ngIf="show"
+          (change)="comparedata = !comparedata"
+        />
+        <i
+          class="fa-brands fa-square-whatsapp"
+          style="
+            color: #25d366;
+            margin-left: 180px;
+            margin-top: -15px;
+            font-size: 40px;
+          "
+        ></i>
+
+        <p class="add">CG Protect</p>
+        <p style="font-size: small">
+          With the world in the midst of a pandemic, You're having to deal with
+          increased uncertainties on daily basis.
+        </p>
+      </div>
+      <div
+        style="
+          width: 150px;
+          height: 30px;
+          border-radius: 20px;
+          display: flex;
+          margin-top: 20px;
+          justify-content: space-between;
+        "
+      >
+        <button class="btn btn-primary">QUOTE</button>
+        <button
+          style="
+            margin-left: 70px;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+          "
+          routerLink="/cgprotect"
+        >
+          VIEW
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card card2">
+      <div class="card card3">
+        <input
+          style="margin-right: 200px"
+          type="checkbox"
+          name=""
+          id=""
+          *ngIf="show"
+        />
+        <i
+          class="fa-brands fa-square-whatsapp"
+          style="
+            color: #25d366;
+            margin-left: 180px;
+            margin-top: -15px;
+            font-size: 40px;
+          "
+        ></i>
+
+        <p class="add">CG Medicare</p>
+        <p style="font-size: small">
+          With the world in the midst of a pandemic, You're having to deal with
+          increased uncertainties on daily basis.
+        </p>
+      </div>
+
+      <div
+        style="
+          width: 150px;
+          height: 30px;
+          border-radius: 20px;
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+        "
+      >
+        <button class="btn btn-primary">QUOTE</button>
+        <button
+          style="
+            margin-left: 70px;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+          "
+        >
+          VIEW
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card card2">
+      <div class="card card3">
+        <input
+          style="margin-right: 200px"
+          type="checkbox"
+          name=""
+          id=""
+          (change)="comparedata1 = !comparedata1"
+          *ngIf="show"
+        />
+        <i
+          class="fa-brands fa-square-whatsapp"
+          style="
+            color: #25d366;
+            margin-left: 180px;
+            margin-top: -15px;
+            font-size: 40px;
+          "
+        ></i>
+
+        <p class="add">Covid Care</p>
+        <p style="font-size: small">
+          With the world in the midst of a pandemic, You're having to deal with
+          increased uncertainties on daily basis.
+        </p>
+      </div>
+
+      <div
+        style="
+          width: 150px;
+          margin-top: 20px;
+          height: 30px;
+          border-radius: 20px;
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+        "
+      >
+        <button class="btn btn-primary">QUOTE</button>
+        <button
+          style="
+            margin-left: 70px;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+          "
+        >
+          VIEW
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card card2">
+      <div class="card card3">
+        <input
+          style="margin-right: 200px"
+          type="checkbox"
+          name=""
+          id=""
+          *ngIf="show"
+        />
+        <i
+          class="fa-brands fa-square-whatsapp"
+          style="
+            color: #25d366;
+            margin-left: 180px;
+            margin-top: -15px;
+            font-size: 40px;
+          "
+        ></i>
+
+        <p class="add">Life Protect</p>
+        <p style="font-size: small">
+          With the world in the midst of a pandemic, You're having to deal with
+          increased uncertainties on daily basis.
+        </p>
+      </div>
+      <div
+        style="
+          width: 150px;
+          height: 30px;
+          border-radius: 20px;
+          display: flex;
+          margin-top: 20px;
+          justify-content: space-between;
+        "
+      >
+        <button class="btn btn-primary">QUOTE</button>
+        <button
+          style="
+            margin-left: 70px;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+          "
+        >
+          VIEW
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="card"
+  *ngIf="!show"
+  [class.clikced-style]="isClicked"
+  style="margin-left: 65px; margin-top: -55px"
+>
+  <div class="card-body">
+    <p>Benefits</p>
+    <ul>
+      <li>
+        Get fixed lump sum payout irrespective of the actual expenses incurred
+        for diag
+      </li>
+      <li>
+        Make Multiple Claims for same or diffrent conditions or procedures.
+      </li>
+      <li>Indexation benefit to stay ahead of medical inflation.</li>
+    </ul>
+  </div>
+</div>
+
+<div>
+  <mat-tab-group class="coverage">
+    <mat-tab label="COVID CARE" *ngIf="comparedata1">
+      <table
+        class="table"
+        style="
+          background-color: #1d1d70;
+          color: white;
+          margin-top: 30px;
+          border-radius: 20px;
+        "
+      >
+        <thead>
+          <tr>
+            <th scope="col">$500-$800</th>
+          </tr>
+        </thead>
+        <tbody
+          style="background-color: white; color: black; text-align: center"
+        >
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-xmark"></i></td>
+          </tr>
+
+          <tr>
+            <td><i class="fa-solid fa-xmark"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-xmark"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </mat-tab>
+  </mat-tab-group>
+
+  <mat-tab-group class="coverage">
+    <mat-tab label="CG MEDICARE" *ngIf="comparedata">
+      <table
+        class="table"
+        style="
+          background-color: rgb(29, 29, 112);
+          color: white;
+          margin-top: 30px;
+          border-radius: 20px;
+        "
+      >
+        <thead>
+          <tr>
+            <th scope="col">$500-$800</th>
+          </tr>
+        </thead>
+        <tbody
+          style="background-color: white; color: black; text-align: center"
+        >
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-xmark"></i></td>
+          </tr>
+
+          <tr>
+            <td><i class="fa-solid fa-xmark"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-xmark"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </mat-tab>
+  </mat-tab-group>
+  <mat-tab-group class="coverage">
+    <mat-tab label="CG PROTECT" *ngIf="comparedata">
+      <table
+        class="table"
+        style="
+          background-color: rgb(29, 29, 112);
+          color: white;
+          margin-top: 30px;
+          border-radius: 20px;
+          margin-right: -90px;
+        "
+      >
+        <thead>
+          <tr>
+            <th scope="col">$500-$800</th>
+          </tr>
+        </thead>
+        <tbody
+          style="background-color: white; color: black; text-align: center"
+        >
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-xmark"></i></td>
+          </tr>
+
+          <tr>
+            <td><i class="fa-solid fa-xmark"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-xmark"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-check"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </mat-tab>
+  </mat-tab-group>
+
+  <mat-tab-group style="width: 300px;float: left; margin-left: 90px;">
+    <mat-tab label="Coverage" *ngIf="comparedata">
+      <table
+        class="table"
+        style="
+          background-color: rgb(29, 29, 112);
+          color: white;
+          margin-top: 30px;
+          border-radius: 35px;
+        "
+      >
+        <thead>
+          <tr>
+            <th scope="col" style="text-align: center">Hospital Access</th>
+          </tr>
+        </thead>
+        <tbody style="background-color: white; color: black">
+          <tr>
+            <td>Emergency Medical Evacuation</td>
+          </tr>
+          <tr>
+            <td>Access private Hospital accommodation</td>
+          </tr>
+
+          <tr>
+            <td>Accidental Injury benefit</td>
+          </tr>
+          <tr>
+            <td>Blood , neck and spine</td>
+          </tr>
+          <tr>
+            <td>Blood</td>
+          </tr>
+          <tr>
+            <td>Bone,joint and muscle</td>
+          </tr>
+          <tr>
+            <td>Breast Surgery(medical necessary)</td>
+          </tr>
+          <tr>
+            <td>Cataracts</td>
+          </tr>
+          <tr>
+            <td>Covid-19 cover</td>
+          </tr>
+          <tr>
+            <td>Assisted reproductive services</td>
+          </tr>
+        </tbody>
+      </table>
+    </mat-tab>
+  </mat-tab-group>
+</div>

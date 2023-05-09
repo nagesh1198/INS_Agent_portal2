@@ -1,0 +1,80 @@
+<div style="margin-left: 100px; margin-top: 80px; cursor: pointer">
+  <i class="fa-solid fa-chevron-left" routerLink="/dashboard"> </i>
+  Renewal
+</div>
+<div>
+  <div class="dropdown" style="margin-left: 100px; margin-top: 40px">
+    <button
+      class="btn dropdown-toggle"
+      type="button"
+      style="background-color: azure"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      All policies
+    </button>
+    <ul class="dropdown-menu" style="border-radius: 15px">
+      <li><a class="dropdown-item" href="#">Health</a></li>
+      <li><a class="dropdown-item" href="#">Documents</a></li>
+      <li><a class="dropdown-item" href="#">Gallery</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="card" style="margin-top: 40px; width: 900px; margin-left: 100px">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Policy No.</th>
+
+        <th scope="col">Prd Type</th>
+
+        <th scope="col">Validity</th>
+
+        <th scope="col">Last Paid</th>
+
+        <th scope="col">Contact</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr
+        appClickableTableRow
+        data-href="/policycovered"
+        [data]="item"
+        *ngFor="let item of renewalList"
+      >
+        <td>
+          <span class="material-icons-outlined">account_circle</span
+          >{{ item.policyno }}
+        </td>
+
+        <td>{{ item.prdtype }}</td>
+
+        <td>{{ item.validity }}</td>
+
+        <td style="color: blue">{{ item.lastpaid }}</td>
+        <td>{{ item.contact }}</td>
+        <td>
+          <span
+            class="material-icons-outlined"
+            aria-hidden="true"
+            style="color: blue"
+          >
+            email
+          </span>
+        </td>
+
+        <td>
+          <span
+            class="material-icons-outlined"
+            aria-hidden="true"
+            style="color: red"
+          >
+            delete
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

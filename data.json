@@ -1,0 +1,454 @@
+{
+  "applicants": [
+    {
+      "id": "DC03",
+      "policyowner": "Isaiah Howard",
+      "prdtype": "Life Protect",
+      "date": "12-30-2021",
+      "status": "UW"
+    },
+    {
+      "id": "DC03",
+      "policyowner": "Isaiah Howard",
+      "prdtype": "Life Protect",
+      "date": "12-30-2021",
+      "status": "UW"
+    },
+    {
+      "id": "DC03",
+      "policyowner": "Isaiah Howard",
+      "prdtype": "Life Protect",
+      "date": "12-30-2021",
+      "status": "UW"
+    },
+    {
+      "id": "DC03",
+      "policyowner": "Isaiah Howard",
+      "prdtype": "Life Protect",
+      "date": "12-30-2021",
+      "status": "UW"
+    }
+  ],
+
+  "carts": [
+    {
+      "policyowner": "Kriti Gupta",
+      "Lifeinsured": "Life Protect",
+      "prdtype": "Corona Kavach",
+      "Applicationno": "240427",
+      "date": "10/09/2023",
+      "SA": 1000000,
+      "status": "UW"
+    },
+    {
+      "policyowner": "Kriti Gupta",
+      "Lifeinsured": "Life Protect",
+      "prdtype": "Corona Kavach",
+      "Applicationno": "240427",
+      "date": "10/09/2023",
+      "SA": 1000000,
+      "status": "UW"
+    },
+    {
+      "policyowner": "Jhon Smith",
+      "Lifeinsured": "Life Protect",
+      "prdtype": "Corona Kavach",
+      "Applicationno": "240427",
+      "date": "10/09/2023",
+      "SA": 1000000,
+      "status": "UW"
+    },
+    {
+      "policyowner": "Kriti Gupta",
+      "Lifeinsured": "Life Protect",
+      "prdtype": "Corona Kavach",
+      "Applicationno": "240427",
+      "date": "10/09/2023",
+      "SA": 1000000,
+      "status": "UW"
+    },
+    {
+      "policyowner": "Jhon Smith",
+      "Lifeinsured": "Life Protect",
+      "prdtype": "Corona Kavach",
+      "Applicationno": "240427",
+      "date": "10/09/2023",
+      "SA": 1000000,
+      "status": "UW"
+    },
+    {
+      "policyowner": "Kriti Gupta",
+      "Lifeinsured": "Life Protect",
+      "prdtype": "Corona Kavach",
+      "Applicationno": "240427",
+      "date": "10/09/2023",
+      "SA": 1000000,
+      "status": "Rejected"
+    }
+  ],
+
+  "newLeads": [
+    {
+      "name": "Kiriti Gupta",
+
+      "lastcontacted": "2 days ago",
+
+      "product": "Team Insurance",
+
+      "email": "kiriti@gmail.com",
+
+      "contact": "(91)9824042777",
+
+      "leadstage": "Contacted"
+    },
+
+    {
+      "name": "John Smith",
+
+      "lastcontacted": "2 days ago",
+
+      "product": "Team Insurance",
+
+      "email": "john@gmail.com",
+
+      "contact": "(91)9824042777",
+
+      "leadstage": "Interested"
+    },
+
+    {
+      "name": "Kiriti Gupta",
+
+      "lastcontacted": "2 days ago",
+
+      "product": "Team Insurance",
+
+      "email": "kiriti@gmail.com",
+
+      "contact": "(91)9824042777",
+
+      "leadstage": "Qualified"
+    },
+
+    {
+      "name": "John Smith",
+
+      "lastcontacted": "2 days ago",
+
+      "product": "Team Insurance",
+
+      "email": "john@gmail.com",
+
+      "contact": "(91)9824042777",
+
+      "leadstage": "Contacted"
+    },
+
+    {
+      "name": "Kiriti Gupta",
+
+      "lastcontacted": "2 days ago",
+
+      "product": "Team Insurance",
+
+      "email": "xyz@gmail.com",
+
+      "contact": "(91)9824042777",
+
+      "leadstage": "Contacted"
+    },
+
+    {
+      "name": "John Smith",
+
+      "lastcontacted": "2 days ago",
+
+      "product": "Team Insurance",
+
+      "email": "xyz@gmail.com",
+
+      "contact": "(91)9824042777",
+
+      "leadstage": "Contacted"
+    },
+    {
+      "name": "Kiriti Gupta",
+
+      "lastcontacted": "2 days ago",
+
+      "product": "Team Insurance",
+
+      "email": "xyz@gmail.com",
+
+      "contact": "(91)9824042777",
+
+      "leadstage": "Contacted"
+    }
+  ],
+
+  "renewal": [
+    {
+      "policyowner": "Kiriti Gupta",
+      "policyno": 100122312211,
+
+      "prdtype": "Protect Plus",
+
+      "validity": "12/09/2023",
+
+      "lastpaid": "Pay Now",
+      "date": "10/09/2023",
+
+      "contact": "(91)9824042777"
+    },
+
+    {
+      "policyowner": "Kiriti Gupta",
+      "policyno": 100122312211,
+
+      "prdtype": "Protect Plus",
+
+      "validity": "12/09/2023",
+
+      "lastpaid": "Pay Now",
+      "date": "10/09/2023",
+
+      "contact": "(91)9824042777"
+    },
+
+    {
+      "policyowner": "Kiriti Gupta",
+      "policyno": 100122312211,
+
+      "prdtype": "Protect Plus",
+
+      "validity": "12/09/2023",
+
+      "lastpaid": "Pay Now",
+      "date": "10/09/2023",
+
+      "contact": "(91)9824042777"
+    },
+
+    {
+      "policyowner": "Harsha Gupta",
+      "policyno": 100122312211,
+
+      "prdtype": "Protect Plus",
+
+      "validity": "12/09/2023",
+
+      "lastpaid": "Pay Now",
+      "date": "10/09/2023",
+
+      "contact": "(91)9824042777"
+    },
+
+    {
+      "policyowner": "John Smith",
+      "policyno": 100122312211,
+
+      "prdtype": "Protect Plus",
+
+      "validity": "12/09/2023",
+
+      "lastpaid": "Pay Now",
+      "date": "10/09/2023",
+
+      "contact": "(91)9824042777"
+    },
+
+    {
+      "policyowner": "Kabir Singh",
+      "policyno": 100122312211,
+
+      "prdtype": "Protect Plus",
+
+      "validity": "12/09/2023",
+
+      "lastpaid": "Pay Now",
+      "date": "10/09/2023",
+
+      "contact": "(91)9824042777"
+    },
+
+    {
+      "policyowner": "Preeti Singh",
+      "policyno": 100122312211,
+
+      "prdtype": "Protect Plus",
+
+      "validity": "12/09/2023",
+      "date": "10/09/2023",
+
+      "lastpaid": "Pay Now",
+
+      "contact": "(91)9824042777"
+    }
+  ],
+
+  "expired": [
+    {
+      "id": "212",
+
+      "name": "Kiriti Gupta",
+
+      "insurance": "Corona Kavach",
+
+      "contact": "(91)9824042777",
+
+      "status": "expired",
+
+      "date": "12/09/2023"
+    },
+
+    {
+      "id": "212",
+
+      "name": "John Smith",
+
+      "insurance": "Protect Plus",
+
+      "contact": "(91)9824042777",
+
+      "status": "expired",
+
+      "date": "12/09/2023"
+    },
+
+    {
+      "id": "212",
+
+      "name": "Kiriti Gupta",
+
+      "insurance": "Corona Kavach",
+
+      "contact": "(91)9824042777",
+
+      "status": "expired",
+
+      "date": "12/09/2023"
+    },
+
+    {
+      "id": "212",
+      "name": "John Smith",
+
+      "insurance": "Health Insurance",
+
+      "contact": "(91)9824042777",
+
+      "status": "expired",
+
+      "date": "12/09/2023"
+    },
+
+    {
+      "id": "212",
+
+      "name": "Kiriti Gupta",
+
+      "insurance": "Wealth Plus",
+
+      "contact": "(91)9824042777",
+
+      "status": "expired",
+
+      "date": "12/09/2023"
+    },
+
+    {
+      "id": "212",
+
+      "name": "John Smith",
+
+      "insurance": "Protect Plus",
+
+      "contact": "(91)9824042777",
+
+      "status": "expired",
+
+      "date": "12/09/2023"
+    }
+  ],
+
+  "cgprotectList": [
+    {
+      "ec": "MIN AGE AT ENTRY",
+
+      "lifeoption": "18 Years",
+
+      "income": "18 Years",
+
+      "llp": "25 Years"
+    },
+
+    {
+      "ec": "MAX AGE AT ENTRY",
+
+      "lifeoption": "65 Years",
+
+      "income": "65 Years",
+
+      "llp": "65 Years"
+    },
+
+    {
+      "ec": "MIN POLICY TERM",
+
+      "lifeoption": "(85 Years-Age at Entry)",
+
+      "income": "40 Years",
+
+      "llp": "Whole of Life"
+    },
+
+    {
+      "ec": "PREMIUM PAYMENT MODE",
+
+      "lifeoption": "Single Pay, Regular Pay, Limited Pay:5yrs to 84",
+
+      "income": "Single Pay, Regular Pay, Limited Pay:5yrs to 39 years",
+
+      "llp": "Whole of Life"
+    },
+
+    {
+      "ec": "PREMIUM PAYMENT",
+
+      "lifeoption": "Single, Annual, Semi Annual, Quaterly, Monthly",
+
+      "income": "Single, Annual, Semi Annual, Quaterly, Monthly",
+
+      "llp": "Limited Pay:(65-Age Entry or (75-Age Entry)"
+    }
+  ],
+  "PolicyList": [
+    {
+      "one": "Covid-10 Cover",
+
+      "two": "18 Years",
+
+      "three": "25 Years",
+
+      "four": "Unlimited Life Cover",
+
+      "five": "65 years",
+
+      "six": "65 Years",
+
+      "seven": "Out Ptient Benefit",
+
+      "eight": "40 years",
+
+      "nine": "Whole Of life",
+
+      "ten": "Best Hospitals At affordable",
+
+      "eleven": "Single Pay,Regular pay,Limited Pay,% years To 30 Years",
+
+      "twelve": "Whole Of year"
+    }
+  ],
+
+  "Lists": []
+}

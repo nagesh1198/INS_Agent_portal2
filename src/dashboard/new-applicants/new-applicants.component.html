@@ -1,0 +1,46 @@
+  <div class="card box" style="width:35rem; margin-top: 55px; border-radius: 15px; border: none; box-shadow: 0px 5px 10px rgba(0, 0, 0,0.15);">
+    <div class="card-body">
+      <div class="button-wrapper">
+        <div class="col">New Applicants</div>
+      <div class="col-md-auto">
+     <p class="view" routerLink="/applicants">
+      view All
+    </p>
+         
+
+      </div>
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" style="float: right; background-color:azure" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All Policies
+            </button>
+            <ul class="dropdown-menu" style="border-radius: 20px; padding:0px;">
+              <li><a class="dropdown-item" href="#">Health</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Gallery</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Documents</a></li>
+            </ul>
+          </div>
+      </div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Policy Owner</th>
+            <th scope="col">Prd Type</th>
+            <th scope="col">Date</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of  productList">
+            <td>{{item.id}}</td>
+            <td>{{item.policyowner}}</td>
+            <td>{{item.prdtype}}</td>
+            <td>{{item.date}}</td>
+            <td>{{item.status}}</td>
+          </tr>
+        </tbody>
+  </table>
+   </div>
+  </div>

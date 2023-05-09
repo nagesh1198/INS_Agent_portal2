@@ -1,0 +1,174 @@
+<div
+  class="card"
+  style="
+    width: 480px;
+    height: 220px;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 3px 3px grey;
+  "
+>
+  <h5 style="margin-top: 10px; margin-left: 20px">Today's Events</h5>
+
+  <span class="material-icons-outlined icon1"> cake </span>
+
+  <mat-list
+    class="card"
+    style="margin-top: 2px; border: none; box-shadow: 0 0 0"
+  >
+    <mat-list-item
+      class="row justify-content-start"
+      style="margin-left: 20px; height: 80px"
+    >
+      <i class="fa-regular fa-user icon"></i>
+
+      <i class="fa-regular fa-user icon"></i>
+
+      <i class="fa-regular fa-user icon"></i>
+
+      <footer class="blockquote-footer" style="margin-top: 2px">
+        +11 more birthdays
+      </footer>
+
+      <button
+        class="btn btn-outline-dark btn-sm"
+        style="
+          border-radius: 20px;
+
+          margin-left: 270px;
+
+          width: 100px;
+
+          height: 30px;
+
+          margin-top: -100px;
+        "
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Send wishes
+      </button>
+    </mat-list-item>
+
+    <mat-list-item
+      class="row justify-content-start"
+      style="margin-left: 20px; height: 80px"
+    >
+      <i class="fa-regular fa-user icon"></i>
+
+      <i class="fa-regular fa-user icon"></i>
+
+      <footer class="blockquote-footer" style="margin-top: 2px">
+        1 year anniversary
+      </footer>
+
+      <button
+        class="btn btn-outline-dark btn-sm"
+        style="
+          border-radius: 20px;
+
+          margin-left: 270px;
+
+          width: 100px;
+
+          height: 30px;
+
+          margin-top: -100px;
+        "
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Send wishes
+      </button>
+    </mat-list-item>
+  </mat-list>
+
+  <!-- Modal -->
+
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content" style="width: 700px; height: 500px">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">To</h1>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="modal-body">
+          <input
+            type="email"
+            multiple
+            required
+            minlength="4"
+            #name="ngModel"
+            email
+            name="name"
+            class="form-control"
+            placeholder="Enter Email Address"
+            ngModel
+          />
+          <span
+            *ngIf="name.invalid && (name.touched || name.dirty)"
+            style="color: red; margin-top: 10px"
+            >Enter Valid input</span
+          >
+
+          <br />
+
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id=""
+            placeholder="Enter your message"
+          />
+        </div>
+
+        <div class="modal-body">
+          <p>Label</p>
+
+          <textarea
+            name=""
+            class="form-control"
+            id=""
+            cols="30"
+            rows="5"
+            maxlength="100"
+          ></textarea>
+        </div>
+
+        <div class="modal-footer align-center">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Discard
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            (click)="alertwithSuccess()"
+            data-bs-target="#exampleModel"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

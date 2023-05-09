@@ -1,0 +1,320 @@
+<div style="z-index: 9999;">
+    <mat-sidenav-container
+      class="cgcontainer"
+      (backdropClick)="close('backdrop')"
+    >
+      <mat-sidenav
+        #sidenav
+        (keydown.escape)="close('escape')"
+      
+        position="end"
+        style="width: 450px; float: right;position: absolute; ">
+        <div style="margin-left: 20px">
+          <div>
+            <h4 style="margin-top: 40px; font: 90; font-weight: 800">
+              Calculate Premium
+            </h4>
+            <p>
+              <button
+                mat-button
+                (click)="close('toggle button')"
+                style="float: right; margin-top: -40px;"
+              >
+                X
+              </button>
+            </p>
+  
+            <form action="/action_page.php">
+              <h4 style="margin-top: 30px">
+                Select family members that you want to cover for
+              </h4>
+  
+              <mat-slider
+                min="18"
+                max="100"
+                step="1"
+                showTickMarks
+                discrete
+                [displayWith]="formatLabel"
+                style="margin-left: 250px"
+              >
+                <input matSliderThumb />
+              </mat-slider>
+              <div style="margin-top: -13px">
+                <p style="margin-left: 230px">18yr</p>
+                <p style="margin-left: 350px; margin-top: -32px">100yr</p>
+              </div>
+              <div style="margin-top: -60px">
+                <input
+                  type="checkbox"
+                  id="self"
+                  name="self"
+                  value="ss"
+                  style="cursor: pointer"
+                />
+                <label for="vehicle1" style="font-size: medium"> Self</label
+                ><br />
+                <input
+                  type="checkbox"
+                  id="spouse"
+                  name="spouse"
+                  value="s"
+                  style="cursor: pointer"
+                />
+                <label for="vehicle1" style="font-size: medium"> Spouse</label
+                ><br />
+                <input
+                  type="checkbox"
+                  id="daughter"
+                  name="daughter"
+                  value="d"
+                  style="cursor: pointer"
+                />
+                <label for="vehicle2" style="font-size: medium"> Daughter</label
+                ><br />
+                <input
+                  type="checkbox"
+                  id="son"
+                  name="son"
+                  value="so"
+                  style="cursor: pointer"
+                />
+                <label for="vehicle3" style="font-size: medium"> Son</label><br />
+                <input
+                  type="checkbox"
+                  id="mother"
+                  name="mother"
+                  value="m"
+                  style="cursor: pointer"
+                />
+                <label for="vehicle1" style="font-size: medium"> Mother</label
+                ><br />
+                <input
+                  type="checkbox"
+                  id="father"
+                  name="father"
+                  value="f"
+                  style="cursor: pointer"
+                />
+                <label for="vehicle1" style="font-size: medium"> Father</label
+                ><br />
+              </div>
+            </form>
+  
+            <div class="table" style="margin-top: 20px">
+              <h4>Payment Frequency</h4>
+              <tr style="margin-top: 10px">
+                <button mat-raised-button color="basic">1 Year</button>
+  
+                <button mat-raised-button color="basic">2 Years</button>
+                <button mat-raised-button color="basic">3 Years</button>
+              </tr>
+            </div>
+  
+            <form action="/action_page.php">
+              <h4>Cover for</h4>
+              <mat-slider
+                min="15"
+                max="30"
+                step="1"
+                showTickMarks
+                discrete
+                [displayWith]="formatLabel"
+                style="width: 350px; margin-top: -30px"
+              >
+                <input matSliderThumb />
+              </mat-slider>
+              <div style="margin-top: -13px">
+                <p>15yr</p>
+                <p style="margin-left: 350px; margin-top: -32px">30yr</p>
+              </div>
+  
+              <div style="margin-top: 10px">
+                <input
+                  type="checkbox"
+                  id="cgp"
+                  name="cgp"
+                  value="c"
+                  style="cursor: pointer"
+                />
+                <label for="vehicle1" style="font-size: medium"> CG Protect</label
+                ><br />
+                <input
+                  type="checkbox"
+                  id="cs"
+                  name="cs"
+                  value="cs"
+                  style="cursor: pointer"
+                />
+                <label for="vehicle2" style="font-size: medium">
+                  Care Shield</label
+                ><br />
+              </div>
+            </form>
+  
+            <button
+              type="button"
+              style="
+                background: darkblue;
+                cursor: pointer;
+                margin-top: 20px;
+                width: 400px;
+                align-items: center;
+                border: rounded;
+              ">
+              <p style="color: white; font-size: large">Your Premium</p>
+              <p style="color: white; font-size: x-large; font-weight: 900">
+                $1500/month
+              </p>
+            </button>
+          </div>
+        </div>
+      </mat-sidenav>
+  
+      <mat-sidenav-content>
+        <div>
+          <div
+            class="card"
+            style="background-color: rgb(206, 237, 255); height: 260px"
+          >
+            <div
+              class="back"
+              style="
+                margin-left: 50px;
+                margin-top: 8px;
+                cursor: pointer;
+                width: 800px;
+                padding-top: 4px;
+              "
+            >
+              <i class="fa-solid fa-chevron-left" routerLink="/health"></i>
+              CG Protect
+            </div>
+            <div class="icon" style="margin-left: 1000px; font-size: x-large">
+              <i class="fa fa-share-nodes" style="width: 50px"></i>
+  
+              <i class="fal fa-brands fa-whatsapp"></i>
+            </div>
+  
+            <div
+              class="cl"
+              style="max-width: 60%; margin-left: 150px; margin-top: 30px"
+            >
+              <p>
+                Health Insurance limited have joined hands to bring you the
+                benifits of health and life insurance in a comprehensive and
+                affordable Click to Protect Health. So nothing comes in your way
+                as you and your family lead a life of pride
+              </p>
+  
+              <div class="but" style="justify-content: space-between">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-rounded"
+                  style="cursor: pointer; margin-right: 10px; border-radius: 30px"
+                  onclick="window.location.href='/ADDNEWLEAD'"
+                >
+                  GET QUOTE
+                </button>
+                <!-- <button type="button" class="btn btn-outline-primary  btn-rounded"  style="cursor: pointer; color: rgb(29, 29, 112); background-color: white; ">CALCULATE PREMIUM</button> -->
+            
+                  <button
+                    mat-button
+                    (click)="sidenav.open()"
+                    style="
+                      cursor: pointer;
+                      color: rgb(29, 29, 112);
+                      background-color: white;
+                      margin-left: 0px;
+                      margin-top: 0px;
+                      border-radius: 30px;
+                    "
+                    
+                  >
+                    Calculate Premium
+                  </button>
+              
+              </div>
+            </div>
+          </div>
+  
+          <div class="body" style="margin-left: 120px; margin-top: 20px">
+            <!-- <div class="table">
+                        <thead >
+                    <tr style="gap: 5rem; display: flex; border-bottom: white;">
+                        <th style="cursor: pointer;">Eligibility</th>   
+                        <th style="cursor: pointer;">Benefits     </th>
+                        <th style="cursor: pointer;">Servicing    </th>
+                        <th style="cursor: pointer;">Investors    </th>
+                    </tr>
+                </thead>
+                    </div> -->
+            <mat-tab-group style="width: 1200px">
+              <mat-tab label="Eligibility">
+                <table
+                  class="table rounded-top"
+                  style="
+                    margin-left: 100px;
+                    margin-top: 20px;
+                    background-color: rgb(29, 29, 112);
+                    width: 800px;
+                  "
+                >
+                  <thead>
+                    <tr>
+                      <th style="color: white">Eligibility Criteria</th>
+                      <th style="color: white">Life Option</th>
+                      <th style="color: white">
+                        Income Replacement,Return of Premium
+                      </th>
+                      <th style="color: white">Life long Protection</th>
+                    </tr>
+                  </thead>
+                  <tbody style="background-color: white">
+                    <tr *ngFor="let item of cgprotectList">
+                      <td>{{ item.ec }}</td>
+  
+                      <td>{{ item.lifeoption }}</td>
+  
+                      <td>{{ item.income }}</td>
+  
+                      <td>{{ item.llp }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </mat-tab>
+           <mat-tab label="Benefits"></mat-tab>
+           <mat-tab label="Servicing"></mat-tab>
+           <mat-tab label="Investors"></mat-tab>
+            </mat-tab-group>
+          </div>
+          <!-- <table class="table rounded-top" style="margin-left: 120px; background-color: rgb(29, 29, 112); width: 800px; ">
+                    <thead>
+                        <tr>
+                            <th style="color: white;">Eligibility Criteria</th>
+                            <th style="color: white;">Life Option</th>
+                            <th style="color: white;">Income Replacement,Return of Premium</th>
+                            <th style="color: white;">Life long Protection</th>
+                        </tr>
+                    </thead>
+                    <tbody style="background-color: white;">
+                         
+                        <tr *ngFor="let item of cgprotectList">
+                    
+                         <td>{{item.ec}}</td>
+                    
+                         <td>{{item.lifeoption}}</td>
+                    
+                         <td>{{item.income}}</td>
+                    
+                         <td>{{item.llp}}</td>
+                        </tr>
+                        </tbody>
+                </table>    -->
+        </div>
+  
+    
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+  

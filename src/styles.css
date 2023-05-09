@@ -1,0 +1,20 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #212121;
+    --text-color: #fff;
+  }
+  
+  body.dark-mode{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    color: black;
+  }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;background-color: #f5f6fa; }

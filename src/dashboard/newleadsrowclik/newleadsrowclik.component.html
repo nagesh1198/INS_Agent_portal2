@@ -1,0 +1,272 @@
+
+
+
+
+
+<div
+
+class="back"
+
+style="margin-left: 100px; margin-top: 100px; cursor: pointer"
+
+>
+
+<i class="fa-solid fa-chevron-left" onclick="window.location.href='/newleads'"></i>
+
+</div>
+
+
+
+
+<div class="card" style="margin-left: 100px; height: 350px; width: 1100px">
+
+<div class="card-header" style="height: 100px;background-color: rgb(73, 73, 121);">
+
+<div class="row justify-content-between">
+
+<div class="col-4">
+
+<div
+class="rounded-circle border"
+style="
+ width: 80px;
+ height: 80px;
+background-image: url('../../assets/images.jpg');
+ background-position: center center;
+ background-size: cover;
+"
+
+></div>
+
+
+
+
+<div style="float: left; margin-top: -70px; margin-left: 100px;color: #fff;">
+<h2>{{ data.name }}</h2>
+
+
+
+<p>{{data.contact}}</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="col-3">
+
+<i class="fa fa-pencil icon"></i>
+
+
+
+
+<i class="fa fa-phone-volume icon"></i>
+
+
+
+
+<i class="fa fa-envelope icon"></i>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<div class="container" style="padding-top: 20px">
+
+<div class="row align-items-start">
+
+<div class="col">
+
+<p class="h4">Product Name</p>
+
+
+
+
+<p>
+<strong>{{ data.product }}</strong>
+
+</p>
+
+</div>
+
+
+
+
+<div class="col">
+
+<p class="h4">Applicant's Name </p>
+
+
+
+
+<p>
+<strong>{{ data.name}}</strong>
+
+</p>
+
+</div>
+
+
+
+
+<div class="col">
+
+<p class="h4">Premium</p>
+
+
+
+
+<p><strong> $350-$400</strong></p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="row align-items-start">
+
+<div class="col">
+
+<p class="h4">Email</p>
+
+
+
+
+<p><strong>{{data.email}}</strong></p>
+
+</div>
+
+
+
+
+<div class="col">
+
+<p class="h4">Status</p>
+
+
+
+
+<p>
+<strong style="background-color: orange; color: white;">Contacted</strong>
+
+</p>
+
+</div>
+
+
+
+
+<div class="col">
+
+<p class="h4">Submission date</p>
+
+
+
+
+<p>
+<strong>01/02/2014</strong>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+<div style="margin-left: 850px">
+
+  <button
+  
+  class="btn btn-primary"
+  
+  style="border-radius: 25px"
+  
+  onclick="window.location.href='/quotation'"
+  
+  >
+  
+  SEND PAYMENT LINK
+  
+ </button>
+  
+ </div>
+
+</div>
+
+<div
+
+ class="card"
+
+ style="margin-left: 100px; height: 100px; width: 1100px; padding: 10px; margin-top: 30px;"
+
+>
+
+ <div class="lead-status">
+
+  <input type="radio" name="lead" id="dot-1" />
+
+  <input type="radio" name="lead" id="dot-2" />
+
+  <input type="radio" name="lead" id="dot-3" />
+
+  <input type="radio" name="lead" id="dot-4" />
+
+  <span class="lead-title">Select Lead Status</span>
+
+  <div class="category" style="margin-left: 25px">
+
+   <label for="dot-1">
+
+    <span class="dot one"></span>
+
+    <span class="lead">Contacted</span>
+
+   </label>
+
+   <label for="dot-2">
+
+    <span class="dot two"></span>
+
+    <span class="lead">Interested</span>
+
+   </label>
+
+   <label for="dot-3">
+
+    <span class="dot three"></span>
+
+    <span class="lead">Qualified</span>
+
+   </label>
+
+   <label for="dot-4">
+
+    <span class="dot four"></span>
+
+    <span class="lead">Rejected</span>
+
+   </label>
+
+   <button class="btn btn-primary" style="border-radius: 25px">Save</button>
+
+  </div>
+
+
+ </div>
+
+
+</div>
+
+
+
+
+

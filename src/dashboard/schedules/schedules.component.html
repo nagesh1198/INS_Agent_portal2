@@ -1,0 +1,78 @@
+<div class="card" style="margin-top: 20px; width: 480px;border-radius: 15px; border: none;box-shadow: 0px 5px 10px rgba(0, 0, 0,0.15);;">
+  <div class="card-body">
+    <h5>Today's Schedule</h5>
+
+    <div class="d-flex flex-direction-row justify-content-end">
+      <input
+        type="date"
+        style="margin-top:-30px"
+        name="dategiven"
+        id="dategiven"
+        placeholder=""
+        [(ngModel)]="selectedDate" (ngModelChange)="updateDates()"
+
+        [(ngModel)]="selectedDateString" (ngModelChange)="updateSelectedDate()"
+      />
+    </div>
+
+    <div class="row flex-nowrap overflow" style="padding: 5%; margin-left: -30px;">
+      <div class="col" *ngFor="let date of dates; let i=index">
+        <div
+          class="card"
+          style="width: 65px;height: 70px; border-radius: 15px;"
+          [ngClass]="{'first-card':dates[i].getTime() === selectedDate.getTime()}"
+        >
+          <div class="card-body" style="padding: 13px;"> 
+            <strong class="card-title">{{ date | date:'dd  EEE' }}</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <mat-list class="card" style="margin-top: -35px; border: none; height:140px">
+    <mat-list-item class="row justify-content-start">
+      <div class="col-3" style="margin-inline-start: 10px">
+        <span class="material-icons-outlined" style="color: rgb(24, 146, 234)">
+          people
+        </span>
+      </div>
+
+      <div class="col" style="margin-left: 40px; margin-top: -30px">
+        <h6>Meeting with Haron</h6>
+      </div>
+
+      <div class="col-3" style="margin-top: -30px; margin-left: 300px">
+        <span class="material-icons-outlined icon1"> call </span>
+
+        <span class="material-icons-outlined icon2"> videocam </span>
+      </div>
+
+      <div style="margin-left: 50px">
+        <h6 style="color: rgb(24, 146, 234); margin-top: -25px">4:00 PM</h6>
+      </div>
+    </mat-list-item>
+    <br>
+    <mat-list-item class="row justify-content-start">
+      <div class="col-3" style="margin-inline-start: 10px">
+        <span class="material-icons-outlined" style="color: rgb(24, 146, 234)">
+          people
+        </span>
+      </div>
+
+      <div class="col" style="margin-left: 40px; margin-top: -30px">
+        <h6>Meeting with Harry</h6>
+      </div>
+
+      <div class="col-3" style="margin-top: -30px; margin-left: 300px">
+        <span class="material-icons-outlined icon1"> call </span>
+
+        <span class="material-icons-outlined icon2"> videocam </span>
+      </div>
+
+      <div style="margin-left: 50px">
+        <h6 style="color: rgb(24, 146, 234); margin-top: -25px">4:00 PM</h6>
+      </div>
+    </mat-list-item>
+  </mat-list>
+</div>

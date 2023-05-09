@@ -1,0 +1,43 @@
+.icon {
+  background-color: rgb(203, 107, 107);
+
+  color: aliceblue;
+
+  font-size: 15px;
+
+  width: 30px;
+
+  height: 30px;
+
+  border: solid rgb(19, 15, 15);
+
+  border-radius: 80%;
+
+  padding: 7px;
+
+  margin-left: -7px;
+
+  margin-top: 10px;
+}
+
+.icon1 {
+  background-color: rgb(228, 226, 226);
+
+  font-size: 20px;
+
+  width: 40px;
+
+  height: 40px;
+
+  padding: 10px;
+
+  border-radius: 80%;
+
+  margin-top: -30px;
+
+  margin-left: 400px;
+
+  color: rgb(24, 146, 234);
+}
+
+

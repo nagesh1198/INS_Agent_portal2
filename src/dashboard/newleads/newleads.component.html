@@ -1,0 +1,118 @@
+
+
+
+
+<div style="margin-left:100px ; margin-top:80px; cursor: pointer;" >
+    <i class="fa-solid fa-chevron-left" routerLink="/dashboard"> </i>
+    New Leads
+  </div>
+  <div style="display: flex; justify-content: space-between; padding:22px 130px;" >
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" style="background-color: azure;" data-bs-toggle="dropdown" aria-expanded="false">
+        All policies
+      </button>
+      <ul class="dropdown-menu" style="border-radius: 15px;">
+        <li><a class="dropdown-item" href="#">Health</a></li>
+        <li><a class="dropdown-item" href="#">Documents</a></li>
+        <li><a class="dropdown-item" href="#">Gallery</a></li>
+      </ul>
+    </div>
+
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" style="background-color: azure;" data-bs-toggle="dropdown" aria-expanded="false">
+        All policies
+      </button>
+      <ul class="dropdown-menu" style="border-radius: 15px;">
+        <li><a class="dropdown-item" href="#">Health</a></li>
+        <li><a class="dropdown-item" href="#">Documents</a></li>
+        <li><a class="dropdown-item" href="#">Gallery</a></li>
+      </ul>
+    </div>
+    <button class="btn btn-outline-primary">Qualified</button>
+    <button class="btn btn-outline-primary" style="margin-left: -120px;">Interested</button>
+
+    <div>
+        <button class="btn btn-primary" routerLink="/ADDNEWLEAD">
+            Add new Lead
+        </button>
+    </div>
+  </div>
+
+
+
+<div class="card" style="margin-left: 140px; width: 1000px; margin-top: 20px;">
+
+     <table class="table table-striped">
+    
+     <thead>
+    
+     <tr>
+    
+     <th scope="col">Name</th>
+    
+    
+    
+    
+     <th scope="col">Last Contacted</th>
+    
+    
+    
+    
+     <th scope="col">Product</th>
+    
+    
+    
+    
+     <th scope="col">Email</th>
+    
+    <th scope="col">Contact</th>
+    
+    <th scope="col">Lead Stage</th>
+    
+    </tr>
+    
+ </thead>
+    
+    
+    
+    
+    <tbody>
+    
+     <tr  appClickableTableRow data-href="/newleadsrow" [data]="item" *ngFor="let item of newLeadsList">
+    
+     <td>{{ item.name }}</td>
+    
+    
+    
+    
+ <td>{{ item.lastcontacted }}</td>
+    
+    
+    
+    
+     <td>{{ item.product }}</td>
+    
+    
+    
+    
+     <td>{{ item.email }}</td>
+    
+    
+    
+    
+     <td>{{ item.contact }}</td>
+    
+     <td>{{ item.leadstage }}</td>
+    
+    
+    
+    
+     <td><i class="fa fa-envelope" aria-hidden="true"></i></td>
+    
+ </tr>
+    
+     </tbody>
+    
+     </table>
+    
+    </div>
